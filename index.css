@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: url(bg.jpg) no-repeat;
+    background-size: cover;
+}
+
+.nav{
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    color: white;
+    margin-bottom: 2%;
+    font-size: 50px;
+    font-family: cursive;
+    padding: 10px;
+}
+
+#clockContainer{
+    position: relative;
+    background: url(clock.png) no-repeat;
+    background-size: 100%;
+    margin: auto;
+    height: 30vw;
+    width: 30vw;
+}
+
+#hour, #minute ,#second{
+    position: absolute;
+    background: black;
+    border-radius: 10px;
+}
+
+#hour{
+    width: 2%;
+    height: 26%;
+    top: 24%;
+    left: 48.8%;
+    transform-origin: bottom;
+}
+
+#minute{
+    width: 1.5%;
+    height: 40%;
+    top: 10%;
+    left: 48.9%;
+    transform-origin: bottom;
+}
+
+#second{
+    width: 1%;
+    height: 38%;
+    top: 12%;
+    left: 49.3%;
+    background-color: red;
+    transform-origin: bottom;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    background: url(mobileBg.jpg) no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  #clockContainer{
+    height: 80vw;
+    width: 80vw; 
+    margin-top: 10%;   
+  }
+}
